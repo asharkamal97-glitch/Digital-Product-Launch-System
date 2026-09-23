@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { siteConfig } from '@/config/siteConfig';
 
+// Portal and verification routes read Prisma at request time; never execute them during deployment prerendering.
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: siteConfig.meta.title,
   description: siteConfig.meta.description,

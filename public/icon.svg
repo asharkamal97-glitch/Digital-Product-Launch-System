@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="topFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.15" />
+    </linearGradient>
+    <linearGradient id="topStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a5b4fc" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="midStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <linearGradient id="botStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark container background with gradient border matching header logo -->
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="7" fill="#030712" stroke="url(#borderGrad)" stroke-width="1.5" />
+
+  <!-- Layer 1 (Top diamond) -->
+  <path d="M16 6 L25.5 10.75 L16 15.5 L6.5 10.75 Z" fill="url(#topFill)" stroke="url(#topStroke)" stroke-width="1.75" stroke-linejoin="round" />
+
+  <!-- Layer 2 (Middle chevron) -->
+  <path d="M6.5 15.5 L16 20.25 L25.5 15.5" fill="none" stroke="url(#midStroke)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Layer 3 (Bottom chevron) -->
+  <path d="M6.5 20.25 L16 25 L25.5 20.25" fill="none" stroke="url(#botStroke)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

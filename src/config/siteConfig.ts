@@ -84,7 +84,7 @@ export const siteConfig: SiteConfig = {
   meta: {
     siteName: "Digital Product Launch System",
     tagline: "The complete education, asset library & organic distribution blueprint",
-    title: "DIGITAL PRODUCT LAUNCH SYSTEM — Don't Just Collect Files. Build a System.",
+    title: "Digital Product Launch System — Learn, Build, Market & Sell",
     description: "Learn how digital products work — then use ready-made resources, high-retention content, AI automation agents, and organic traffic frameworks to launch your digital product business.",
     ogImage: "/images/og-preview.png",
     supportEmail: "support@launchsystem.io",

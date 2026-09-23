@@ -90,7 +90,7 @@ export const siteConfig: SiteConfig = {
     supportEmail: "support@launchsystem.io",
   },
   links: {
-    checkoutUrl: "https://whop.com/checkout/digital-product-launch-system", // Update with your actual Whop/Stripe/Gumroad checkout link
+    checkoutUrl: "https://whop.com/checkout/digital-product-launchs-system/", // Updated Whop checkout link
     googleDrivePreviewUrl: "https://drive.google.com/drive/folders/launch-system-hub", // Update with your actual master Drive link
     instantAccessUrl: "#checkout",
     supportEmail: "support@launchsystem.io",

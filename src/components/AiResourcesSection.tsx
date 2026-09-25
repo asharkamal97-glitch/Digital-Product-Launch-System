@@ -23,7 +23,7 @@ export default function AiResourcesSection() {
     {
       category: "AUTOMATION WORKFLOW RECIPES",
       title: "Make.com & n8n Automation Blueprints",
-      desc: "Downloadable JSON recipes to automate customer welcome emails, file delivery, Notion database updates, and social scheduling.",
+      desc: "Downloadable JSON recipes to automate customer welcome emails, file delivery, order database updates, and social scheduling.",
       icon: Workflow,
       tags: ["Make.com", "n8n", "Webhooks"],
     },

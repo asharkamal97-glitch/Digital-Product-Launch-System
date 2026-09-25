@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'ready to post reels',
     'digital product courses',
     'Canva templates commercial use',
-    'Notion templates',
+    'digital planners',
     'organic traffic strategy',
     'Stan Store setup',
     'Gumroad templates',

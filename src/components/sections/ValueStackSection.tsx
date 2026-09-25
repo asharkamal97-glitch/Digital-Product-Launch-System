@@ -24,7 +24,7 @@ export default function ValueStackSection() {
     },
     {
       title: "500+ Commercial Ready-Made Digital Products",
-      desc: "Editable Canva templates, Notion workspace hubs, and PDF planners with full commercial licensing.",
+      desc: "Editable Canva templates, digital planners, and workbooks with full commercial licensing.",
       value: "$597",
     },
     {
@@ -36,11 +36,6 @@ export default function ValueStackSection() {
       title: "High-Converting Sales Page Templates & Swipe Files",
       desc: "Plug-and-play Stan Store, Whop, and Gumroad wireframes with pre-tested headline and copy blocks.",
       value: "$250",
-    },
-    {
-      title: "Master Notion Digital Product Launch OS Hub",
-      desc: "Interactive command center dashboard to track products, schedule content, and monitor sales pipelines.",
-      value: "$197",
     },
     {
       title: "Lifetime Google Drive Master Cloud Access & Updates",

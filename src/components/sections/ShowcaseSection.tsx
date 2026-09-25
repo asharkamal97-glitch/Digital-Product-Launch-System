@@ -2,15 +2,15 @@
 
 import React, { useState } from 'react';
 import { siteConfig } from '@/config/siteConfig';
-import { Folder, FileText, CheckCircle2, Eye, ShieldCheck, Film, Bot, Layout, Sparkles, BookOpen } from 'lucide-react';
-import GlassCard from '@/components/ui/GlassCard';
+import { Folder, Eye, Film, Bot, GraduationCap, Sparkles } from 'lucide-react';
+import GlassCard from '../ui/GlassCard';
 
 export default function ShowcaseSection() {
-  const [activeTab, setActiveTab] = useState<'drive' | 'notion' | 'reels' | 'agents' | 'canva'>('drive');
+  const [activeTab, setActiveTab] = useState<'drive' | 'courses' | 'reels' | 'agents' | 'canva'>('drive');
 
   const showcaseTabs = [
     { id: 'drive', label: 'Drive File Hub', icon: Folder },
-    { id: 'notion', label: 'Notion Life OS & Hub', icon: Layout },
+    { id: 'courses', label: '1,000+ Video Courses', icon: GraduationCap },
     { id: 'reels', label: '10K Reels Vault', icon: Film },
     { id: 'agents', label: '15K AI Agents', icon: Bot },
     { id: 'canva', label: 'Canva Ready Products', icon: Sparkles },
@@ -102,14 +102,14 @@ export default function ShowcaseSection() {
               </div>
             )}
 
-            {activeTab === 'notion' && (
+            {activeTab === 'courses' && (
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <h4 className="text-base font-bold text-white flex items-center gap-2">
-                    <Layout className="w-4 h-4 text-purple-400" />
-                    Master Notion Launch OS Dashboard
+                    <GraduationCap className="w-4 h-4 text-purple-400" />
+                    1,000+ Video Courses & Strategy Modules
                   </h4>
-                  <span className="text-xs font-mono text-slate-400">1-Click Duplicate Link Included</span>
+                  <span className="text-xs font-mono text-slate-400">Step-by-Step Video Curriculum</span>
                 </div>
 
                 <div className="p-5 rounded-xl bg-dark-950/80 border border-white/10 space-y-4">
@@ -118,23 +118,23 @@ export default function ShowcaseSection() {
                       ✦
                     </div>
                     <div>
-                      <h5 className="text-sm font-bold text-white">Digital Product Command Center</h5>
-                      <p className="text-xs text-slate-400">Centralized database for product tracking, customer pipelines & content scheduler</p>
+                      <h5 className="text-sm font-bold text-white">Master Strategy Curriculum</h5>
+                      <p className="text-xs text-slate-400">Structured video training covering digital product economics, store setups, and organic scaling</p>
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                     <div className="p-3 rounded-lg bg-dark-850 border border-white/5 text-xs text-slate-300">
-                      <span className="text-indigo-400 font-mono block mb-1">01. PRODUCT PIPELINE</span>
-                      Track status from ideation to live listing.
+                      <span className="text-indigo-400 font-mono block mb-1">01. ECONOMICS & NICHE</span>
+                      Pricing strategy, offer validation, and unit economics.
                     </div>
                     <div className="p-3 rounded-lg bg-dark-850 border border-white/5 text-xs text-slate-300">
-                      <span className="text-cyan-400 font-mono block mb-1">02. 30-DAY CONTENT MATRIX</span>
-                      Organize hooks, captions, audio & post times.
+                      <span className="text-cyan-400 font-mono block mb-1">02. PAGE ARCHITECTURE</span>
+                      High-converting wireframes, hooks, and checkout flows.
                     </div>
                     <div className="p-3 rounded-lg bg-dark-850 border border-white/5 text-xs text-slate-300">
-                      <span className="text-emerald-400 font-mono block mb-1">03. REVENUE TRACKER</span>
-                      Monitor sales channels & conversion metrics.
+                      <span className="text-emerald-400 font-mono block mb-1">03. ORGANIC REACH</span>
+                      Short-form algorithm playbooks and distribution.
                     </div>
                   </div>
                 </div>

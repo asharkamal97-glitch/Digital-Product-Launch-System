@@ -9,7 +9,7 @@ export default function ReadyMadeSection() {
     {
       step: "01",
       title: "1-Click Duplicate",
-      desc: "Open any of the 500+ Canva or Notion templates directly into your own free or pro account.",
+      desc: "Open any of the 500+ Canva templates and design assets directly into your own free or pro account.",
       icon: Copy,
     },
     {
@@ -21,7 +21,7 @@ export default function ReadyMadeSection() {
     {
       step: "03",
       title: "Export & List",
-      desc: "Download high-res PDFs or publish your Notion/Stan Store template link with your payment link attached.",
+      desc: "Download high-res PDFs or publish your Stan Store or Whop product link with your checkout attached.",
       icon: Sparkles,
     }
   ];
@@ -93,7 +93,7 @@ export default function ReadyMadeSection() {
               </span>
               <ul className="space-y-1.5 text-slate-300">
                 <li>✓ Customize and sell derivative digital products to end customers.</li>
-                <li>✓ Rebrand Canva templates, Notion pages, and worksheets.</li>
+                <li>✓ Rebrand Canva templates, worksheets, and digital guides.</li>
                 <li>✓ Use reels, hooks, and captions to build organic social followings.</li>
                 <li>✓ Keep 100% of the profits from your individual product sales.</li>
               </ul>

@@ -35,7 +35,7 @@ export default function JourneySection() {
       deliverables: [
         "High-Margin Niche Demand Matrix",
         "500+ Ready-Made Product Catalog with Commercial Rights",
-        "Canva / Notion / Ebook Selection Directory",
+        "Canva Templates & Ebook Selection Directory",
         "Competition & Audience Validation Checklist"
       ],
       outcome: "You lock in a specific, high-demand product ready to adapt for your target buyers."
@@ -47,7 +47,7 @@ export default function JourneySection() {
       title: "Rebrand & Customize Your Assets",
       icon: Sparkles,
       tag: "Asset Preparation",
-      description: "Customize your chosen template in Canva or Notion in under an hour. Add your unique angle, colors, and branding using our AI prompt blueprints.",
+      description: "Customize your chosen template in Canva in under an hour. Add your unique angle, colors, and branding using our AI prompt blueprints.",
       deliverables: [
         "1-Click Canva Template Duplication Links",
         "AI Rebranding & Tone Customization Prompts",

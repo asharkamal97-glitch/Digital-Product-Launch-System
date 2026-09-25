@@ -17,7 +17,7 @@ export default function SystemIntroSection() {
       icon: Cpu,
       title: "Ready-Made Assets",
       subtitle: "Commercial-Ready Products",
-      description: "Skip months of product creation with 500+ customizable Canva templates, Notion workspaces, and digital playbooks ready to adapt.",
+      description: "Skip months of product creation with 500+ customizable Canva templates, digital planners, and workbooks ready to adapt.",
       color: "cyan",
     },
     {

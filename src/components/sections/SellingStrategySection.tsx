@@ -14,7 +14,7 @@ export default function SellingStrategySection() {
       name: "PRODUCT",
       icon: Package,
       headline: "Validated, High-Utility Asset",
-      description: "A specific solution that solves a painful problem or saves the customer 10+ hours. Pre-packaged into editable Canva, Notion, or PDF formats.",
+      description: "A specific solution that solves a painful problem or saves the customer 10+ hours. Pre-packaged into editable Canva, template, or PDF formats.",
       keyRule: "Never build something nobody is already searching for.",
     },
     {

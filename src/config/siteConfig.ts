@@ -151,8 +151,8 @@ export const siteConfig: SiteConfig = {
       id: "ready-products",
       label: "Ready-Made Digital Products & Planners",
       count: "500+",
-      highlight: "Fully editable Canva & Notion templates",
-      description: "Commercial-ready digital planners, notion workspace hubs, tracker spreadsheets, and customizable workbooks you can rebrand and adapt for your own audience.",
+      highlight: "Fully editable Canva templates & digital planners",
+      description: "Commercial-ready digital planners, tracker spreadsheets, and customizable workbooks you can rebrand and adapt for your own audience.",
       iconName: "PackageCheck",
     },
     {
@@ -176,10 +176,10 @@ export const siteConfig: SiteConfig = {
       highlights: [
         "Welcome & System Orientation Video",
         "The 7-Day Fast-Track Execution Roadmap",
-        "Notion Master Resource Dashboard",
+        "System Setup Checklist & Resource Directory",
         "Commercial Licensing & Rights Guidelines PDF"
       ],
-      keyDeliverables: ["Orientation Video", "Interactive Notion Hub", "Step-by-Step PDF Guide"]
+      keyDeliverables: ["Orientation Video", "System Setup Checklist", "Step-by-Step PDF Guide"]
     },
     {
       id: "01",
@@ -218,16 +218,16 @@ export const siteConfig: SiteConfig = {
       folderName: "03_READY_MADE_PRODUCTS",
       title: "Ready-Made Customizable Assets",
       badge: "Step 4 • Assets",
-      description: "Commercial-ready planners, Notion workspaces, Canva templates, and digital toolkits you can rebrand and adapt for your niche.",
+      description: "Commercial-ready planners, Canva templates, workbooks, and digital toolkits you can rebrand and adapt for your niche.",
       fileCount: "500+ Editable Projects",
       estimatedValue: "$997 Value",
       highlights: [
         "Canva Pro Editable Planners & Workbooks",
-        "Notion Productivity & Life OS Systems",
+        "Productivity & Financial Tracker Systems",
         "Financial & Budget Tracker Sheets",
         "Complete Commercial Customization License"
       ],
-      keyDeliverables: ["Canva Template Links", "Notion Duplicate Templates", "Source Files"]
+      keyDeliverables: ["Canva Template Links", "Digital Workbook Files", "Source Files"]
     },
     {
       id: "04",
@@ -318,12 +318,12 @@ export const siteConfig: SiteConfig = {
     },
     {
       question: "Do I need prior experience or technical skills to start?",
-      answer: "No prior technical experience is required. We designed this specifically for beginners. We walk you through simple tools (Canva, Notion, Stan Store, Whop, Gumroad) with complete step-by-step video guidance and pre-made templates so you never have to start from a blank screen.",
+      answer: "No prior technical experience is required. We designed this specifically for beginners. We walk you through simple tools (Canva, Stan Store, Whop, Gumroad) with complete step-by-step video guidance and pre-made templates so you never have to start from a blank screen.",
       category: "General"
     },
     {
       question: "How do I receive access to the system after purchasing?",
-      answer: "Immediately upon completing checkout, you will receive an instant confirmation email containing your direct access credentials to the private Google Drive 'Launch Hub' and Notion Dashboard. You will have lifetime access, including all future updates.",
+      answer: "Immediately upon completing checkout, you will receive an instant confirmation email containing your direct access credentials to the private Google Drive 'Launch Hub' and System Guide. You will have lifetime access, including all future updates.",
       category: "Access"
     },
     {
@@ -343,7 +343,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       question: "What format are the files provided in?",
-      answer: "Files are organized in cloud-optimized formats: Canva template links, Notion workspace duplication links, MP4 1080p/4K vertical video reels, PDF action guides, TXT/JSON AI prompt blueprints, and standard spreadsheet templates (.xlsx/.csv).",
+      answer: "Files are organized in cloud-optimized formats: Canva template links, MP4 1080p/4K vertical video reels, PDF action guides, TXT/JSON AI prompt blueprints, and standard spreadsheet templates (.xlsx/.csv).",
       category: "Content"
     },
     {
@@ -403,7 +403,7 @@ Because the Digital Product Launch System provides immediate, irrevocable, and f
 Last Updated: September 2026
 
 PERMITTED USES:
-✓ Customize, edit, rebrand, and adapt designated ready-made digital products (Canva templates, Notion setups, planners, ebooks) for your target audience.
+✓ Customize, edit, rebrand, and adapt designated ready-made digital products (Canva templates, planners, ebooks, workbooks) for your target audience.
 ✓ Sell derivative products created using the templates directly to end customers under your own brand name.
 ✓ Use the short-form video reels, hooks, and caption frameworks to grow your personal or business social media channels.
 ✓ Implement the AI prompt blueprints, automations, and landing page frameworks for your personal or commercial client projects.

@@ -105,12 +105,12 @@ export const siteConfig: SiteConfig = {
     accessType: "Instant Access Delivered Directly to Your Email & Google Drive",
   },
   ctas: {
-    heroPrimary: "GET THE COMPLETE SYSTEM",
+    heroPrimary: "GET INSTANT ACCESS — $47",
     heroSecondary: "SEE WHAT'S INSIDE",
-    navbarCta: "GET ACCESS NOW",
+    navbarCta: "GET INSTANT ACCESS",
     floatingCta: "GET INSTANT ACCESS",
-    midSectionCta: "UNLOCK THE COMPLETE SYSTEM",
-    finalCta: "GET ACCESS NOW",
+    midSectionCta: "GET INSTANT ACCESS",
+    finalCta: "GET INSTANT ACCESS",
     finalSubtext: "Learn the process. Use the resources. Build your page. Start creating.",
   },
   productCounts: {

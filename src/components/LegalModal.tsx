@@ -23,33 +23,33 @@ export default function LegalModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-8">
       {/* Backdrop */}
       <div 
-        className="fixed inset-0 bg-black/80 backdrop-blur-md transition-opacity" 
+        className="fixed inset-0 bg-black/60 dark:bg-black/80 backdrop-blur-md transition-opacity" 
         onClick={onClose} 
       />
 
       {/* Modal Dialog */}
-      <div className="relative w-full max-w-4xl max-h-[88vh] flex flex-col rounded-2xl bg-dark-900 border border-white/10 shadow-2xl shadow-black/80 z-10 overflow-hidden">
+      <div className="relative w-full max-w-4xl max-h-[88vh] flex flex-col rounded-2xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-white/10 shadow-2xl shadow-black/40 dark:shadow-black/80 z-10 overflow-hidden">
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-white/10 px-6 py-4 bg-dark-850">
+        <div className="flex items-center justify-between border-b border-slate-200 dark:border-white/10 px-6 py-4 bg-slate-50 dark:bg-dark-850">
           <div className="flex items-center gap-3">
-            <div className="h-8 w-8 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+            <div className="h-8 w-8 rounded-lg bg-blue-50 dark:bg-indigo-500/10 border border-blue-200 dark:border-indigo-500/20 flex items-center justify-center text-blue-600 dark:text-indigo-400">
               <Shield className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="text-base font-semibold text-white">System Compliance & Transparency</h3>
-              <p className="text-xs text-slate-400">Legal disclosures, usage terms & licensing specifications</p>
+              <h3 className="text-base font-semibold text-slate-900 dark:text-white">System Compliance & Transparency</h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400">Legal disclosures, usage terms & licensing specifications</p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="rounded-lg p-1.5 text-slate-400 hover:bg-white/10 hover:text-white transition-colors"
+            className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 dark:hover:bg-white/10 hover:text-slate-700 dark:hover:text-white transition-colors"
           >
             <X className="h-5 w-5" />
           </button>
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex border-b border-white/10 bg-dark-950 px-6 overflow-x-auto no-scrollbar gap-2 py-2">
+        <div className="flex border-b border-slate-200 dark:border-white/10 bg-slate-100 dark:bg-dark-950 px-6 overflow-x-auto no-scrollbar gap-2 py-2">
           {[
             { id: 'privacy', label: 'Privacy Policy', icon: Shield },
             { id: 'terms', label: 'Terms of Service', icon: FileText },
@@ -66,8 +66,8 @@ export default function LegalModal({
                 onClick={() => setActiveTab(tab.id as any)}
                 className={`flex items-center gap-2 whitespace-nowrap px-3.5 py-2 text-xs font-medium rounded-lg transition-all ${
                   isActive
-                    ? 'bg-indigo-600/20 text-indigo-300 border border-indigo-500/30 shadow-sm'
-                    : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                    ? 'bg-white text-blue-600 border border-slate-200 shadow-sm font-semibold dark:bg-indigo-600/20 dark:text-indigo-300 dark:border-indigo-500/30'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-white/50 dark:text-slate-400 dark:hover:text-slate-200 dark:hover:bg-white/5'
                 }`}
               >
                 <Icon className="w-3.5 h-3.5" />
@@ -78,71 +78,71 @@ export default function LegalModal({
         </div>
 
         {/* Content Body */}
-        <div className="flex-1 overflow-y-auto p-6 text-sm text-slate-300 leading-relaxed space-y-4">
+        <div className="flex-1 overflow-y-auto p-6 text-sm text-slate-700 dark:text-slate-300 leading-relaxed space-y-4">
           {activeTab === 'privacy' && (
-            <div className="whitespace-pre-line font-mono text-xs sm:text-sm bg-dark-950/80 p-5 rounded-xl border border-white/5 text-slate-300">
+            <div className="whitespace-pre-line font-mono text-xs sm:text-sm bg-slate-50 dark:bg-dark-950/80 p-5 rounded-xl border border-slate-200 dark:border-white/5 text-slate-800 dark:text-slate-300">
               {siteConfig.legal.privacyPolicy}
             </div>
           )}
 
           {activeTab === 'terms' && (
-            <div className="whitespace-pre-line font-mono text-xs sm:text-sm bg-dark-950/80 p-5 rounded-xl border border-white/5 text-slate-300">
+            <div className="whitespace-pre-line font-mono text-xs sm:text-sm bg-slate-50 dark:bg-dark-950/80 p-5 rounded-xl border border-slate-200 dark:border-white/5 text-slate-800 dark:text-slate-300">
               {siteConfig.legal.termsOfService}
             </div>
           )}
 
           {activeTab === 'refund' && (
-            <div className="whitespace-pre-line font-mono text-xs sm:text-sm bg-dark-950/80 p-5 rounded-xl border border-white/5 text-slate-300">
+            <div className="whitespace-pre-line font-mono text-xs sm:text-sm bg-slate-50 dark:bg-dark-950/80 p-5 rounded-xl border border-slate-200 dark:border-white/5 text-slate-800 dark:text-slate-300">
               {siteConfig.legal.refundPolicy}
             </div>
           )}
 
           {activeTab === 'license' && (
-            <div className="whitespace-pre-line font-mono text-xs sm:text-sm bg-dark-950/80 p-5 rounded-xl border border-white/5 text-slate-300">
+            <div className="whitespace-pre-line font-mono text-xs sm:text-sm bg-slate-50 dark:bg-dark-950/80 p-5 rounded-xl border border-slate-200 dark:border-white/5 text-slate-800 dark:text-slate-300">
               {siteConfig.legal.licenseUsageRights}
             </div>
           )}
 
           {activeTab === 'disclaimer' && (
-            <div className="whitespace-pre-line font-mono text-xs sm:text-sm bg-dark-950/80 p-5 rounded-xl border border-white/5 text-slate-300">
+            <div className="whitespace-pre-line font-mono text-xs sm:text-sm bg-slate-50 dark:bg-dark-950/80 p-5 rounded-xl border border-slate-200 dark:border-white/5 text-slate-800 dark:text-slate-300">
               {siteConfig.legal.earningsDisclaimer}
             </div>
           )}
 
           {activeTab === 'contact' && (
-            <div className="bg-dark-950/80 p-6 rounded-xl border border-white/5 space-y-6">
+            <div className="bg-slate-50 dark:bg-dark-950/80 p-6 rounded-xl border border-slate-200 dark:border-white/5 space-y-6">
               <div>
-                <h4 className="text-base font-semibold text-white mb-1">Direct Support Channel</h4>
-                <p className="text-slate-400 text-xs">Have questions before purchasing or need assistance with your Google Drive access? Reach out directly.</p>
+                <h4 className="text-base font-semibold text-slate-900 dark:text-white mb-1">Direct Support Channel</h4>
+                <p className="text-slate-500 dark:text-slate-400 text-xs">Have questions before purchasing or need assistance with your Google Drive access? Reach out directly.</p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="p-4 rounded-lg bg-dark-850 border border-white/10">
-                  <span className="text-xs text-indigo-400 font-mono">SUPPORT EMAIL</span>
-                  <p className="text-sm font-semibold text-white mt-1">{siteConfig.links.supportEmail}</p>
-                  <p className="text-xs text-slate-400 mt-1">Average response time: &lt; 24 hours</p>
+                <div className="p-4 rounded-lg bg-white dark:bg-dark-850 border border-slate-200 dark:border-white/10 shadow-sm dark:shadow-none">
+                  <span className="text-xs text-blue-600 dark:text-indigo-400 font-mono font-semibold">SUPPORT EMAIL</span>
+                  <p className="text-sm font-semibold text-slate-900 dark:text-white mt-1">{siteConfig.links.supportEmail}</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">Average response time: &lt; 24 hours</p>
                 </div>
 
-                <div className="p-4 rounded-lg bg-dark-850 border border-white/10">
-                  <span className="text-xs text-cyan-400 font-mono">INSTANT ACCESS CHECK</span>
-                  <p className="text-sm font-semibold text-white mt-1">Automatic Drive Onboarding</p>
-                  <p className="text-xs text-slate-400 mt-1">Direct link generated upon checkout</p>
+                <div className="p-4 rounded-lg bg-white dark:bg-dark-850 border border-slate-200 dark:border-white/10 shadow-sm dark:shadow-none">
+                  <span className="text-xs text-cyan-600 dark:text-cyan-400 font-mono font-semibold">INSTANT ACCESS CHECK</span>
+                  <p className="text-sm font-semibold text-slate-900 dark:text-white mt-1">Automatic Drive Onboarding</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">Direct link generated upon checkout</p>
                 </div>
               </div>
 
-              <div className="p-4 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-xs text-indigo-200">
-                💡 Tip: To update this support email address or add your Discord/Telegram community link, simply edit the values in <code className="bg-dark-900 px-1 py-0.5 rounded text-indigo-300">src/config/siteConfig.ts</code>.
+              <div className="p-4 rounded-lg bg-blue-50 dark:bg-indigo-500/10 border border-blue-200 dark:border-indigo-500/20 text-xs text-blue-800 dark:text-indigo-200">
+                💡 Tip: For any customer inquiries or assistance, email our dedicated support desk directly at <strong className="font-mono">{siteConfig.links.supportEmail}</strong>.
               </div>
             </div>
           )}
         </div>
 
         {/* Footer */}
-        <div className="border-t border-white/10 px-6 py-3 bg-dark-850 flex items-center justify-between text-xs text-slate-400">
+        <div className="border-t border-slate-200 dark:border-white/10 px-6 py-3 bg-slate-50 dark:bg-dark-850 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
           <span>Digital Product Launch System • Verification & Compliance</span>
           <button
             onClick={onClose}
-            className="px-4 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium transition-colors"
+            className="px-4 py-1.5 rounded-lg bg-slate-200 hover:bg-slate-300 dark:bg-white/10 dark:hover:bg-white/20 text-slate-800 dark:text-white font-medium transition-colors"
           >
             Close
           </button>

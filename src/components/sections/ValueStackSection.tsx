@@ -3,7 +3,6 @@
 import React from 'react';
 import { siteConfig } from '@/config/siteConfig';
 import { Check, ShieldCheck, ArrowRight, Sparkles, FolderLock, Zap, Lock } from 'lucide-react';
-import GlassCard from '@/components/ui/GlassCard';
 
 export default function ValueStackSection() {
   const valueItems = [
@@ -45,45 +44,50 @@ export default function ValueStackSection() {
   ];
 
   return (
-    <section id="checkout" className="relative py-20 md:py-28 border-t border-white/5 bg-dark-900/90 overflow-hidden">
+    <section id="checkout" className="relative py-20 md:py-28 border-t border-slate-200 dark:border-white/5 bg-slate-100/70 dark:bg-dark-900/90 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-mono font-medium">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-500/10 dark:bg-indigo-500/10 border border-blue-500/20 dark:border-indigo-500/20 text-blue-600 dark:text-indigo-400 text-xs font-mono font-medium">
             <Sparkles className="w-3.5 h-3.5" />
             THE COMPLETE VALUE STACK
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight font-display">
             Everything You Need in One Unified System
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
             No monthly subscriptions. No hidden up-sells. You get lifetime access to the complete strategic education, asset library, and Google Drive Launch Hub.
           </p>
         </div>
 
         {/* Pricing & Value Comparison Card */}
         <div className="max-w-4xl mx-auto">
-          <div className="relative rounded-3xl p-1 bg-gradient-to-b from-indigo-500 via-purple-500/30 to-white/10 shadow-2xl shadow-indigo-950/50">
-            <div className="rounded-3xl bg-dark-950 p-6 sm:p-10 md:p-12 space-y-8">
+          <div className="relative rounded-3xl p-1 bg-gradient-to-b from-blue-500/20 via-indigo-500/10 to-slate-200 dark:from-indigo-500 dark:via-purple-500/30 dark:to-white/10 shadow-xl shadow-slate-200/50 dark:shadow-2xl dark:shadow-indigo-950/50">
+            <div className="rounded-3xl bg-white dark:bg-dark-950 p-6 sm:p-10 md:p-12 space-y-8 border border-slate-200 dark:border-white/10">
               {/* Stack items */}
               <div className="space-y-4">
-                <span className="text-xs font-mono text-indigo-400 font-semibold uppercase tracking-wider block">
-                  WHAT&apos;S INCLUDED IN THE LAUNCH SYSTEM:
-                </span>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-mono text-blue-600 dark:text-indigo-400 font-bold uppercase tracking-wider block">
+                    WHAT&apos;S INCLUDED IN THE LAUNCH SYSTEM:
+                  </span>
+                  <span className="text-xs font-mono text-slate-500 dark:text-slate-400">
+                    Total Value: <strong className="text-slate-900 dark:text-white font-bold">$3,391</strong>
+                  </span>
+                </div>
 
-                <div className="divide-y divide-white/5">
+                <div className="divide-y divide-slate-100 dark:divide-white/5">
                   {valueItems.map((item, idx) => (
-                    <div key={idx} className="py-3 flex items-start justify-between gap-4">
+                    <div key={idx} className="py-3.5 flex items-start justify-between gap-4">
                       <div className="flex items-start gap-3">
-                        <div className="h-5 w-5 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0 mt-0.5">
+                        <div className="h-5 w-5 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5">
                           <Check className="w-3.5 h-3.5" />
                         </div>
                         <div>
-                          <h4 className="text-sm font-semibold text-white">{item.title}</h4>
-                          <p className="text-xs text-slate-400 mt-0.5">{item.desc}</p>
+                          <h4 className="text-sm font-semibold text-slate-900 dark:text-white">{item.title}</h4>
+                          <p className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">{item.desc}</p>
                         </div>
                       </div>
-                      <span className="text-xs font-mono font-bold text-slate-500 line-through flex-shrink-0">
+                      <span className="text-xs font-mono font-bold text-slate-400 dark:text-slate-500 line-through flex-shrink-0">
                         {item.value}
                       </span>
                     </div>
@@ -92,20 +96,20 @@ export default function ValueStackSection() {
               </div>
 
               {/* Pricing Box */}
-              <div className="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 bg-dark-900/60 p-6 sm:p-8 rounded-2xl border border-white/5">
+              <div className="pt-6 border-t border-slate-200 dark:border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 bg-slate-50 dark:bg-dark-900/60 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-white/5">
                 <div className="space-y-1 text-center md:text-left">
                   <div className="flex items-center justify-center md:justify-start gap-3">
-                    <span className="text-3xl sm:text-5xl font-extrabold text-white font-mono tracking-tight">
+                    <span className="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white font-mono tracking-tight">
                       ${siteConfig.pricing.salePrice}
                     </span>
-                    <span className="text-lg text-slate-500 line-through font-mono">
+                    <span className="text-lg text-slate-400 dark:text-slate-500 line-through font-mono">
                       ${siteConfig.pricing.regularPrice}
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-bold">
+                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-xs font-mono font-bold">
                       ONE-TIME
                     </span>
                   </div>
-                  <p className="text-xs text-slate-400 font-mono">
+                  <p className="text-xs text-slate-600 dark:text-slate-400 font-mono">
                     {siteConfig.pricing.billingType}
                   </p>
                 </div>
@@ -114,7 +118,7 @@ export default function ValueStackSection() {
                   href={siteConfig.links.checkoutUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full md:w-auto px-8 py-4 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 shadow-glow-md hover:shadow-glow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
+                  className="w-full md:w-auto px-8 py-4 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 shadow-md hover:shadow-lg dark:shadow-glow-md dark:hover:shadow-glow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
                 >
                   <Lock className="w-4 h-4" />
                   <span>{siteConfig.ctas.heroPrimary}</span>
@@ -123,14 +127,14 @@ export default function ValueStackSection() {
               </div>
 
               {/* Trust Badges */}
-              <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400 font-mono pt-2">
-                <span className="flex items-center gap-1.5 text-emerald-400">
+              <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-600 dark:text-slate-400 font-mono pt-2">
+                <span className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-medium">
                   <ShieldCheck className="w-4 h-4" /> Commercial License Included
                 </span>
-                <span className="flex items-center gap-1.5 text-indigo-400">
+                <span className="flex items-center gap-1.5 text-blue-600 dark:text-indigo-400 font-medium">
                   <FolderLock className="w-4 h-4" /> Instant Google Drive Delivery
                 </span>
-                <span className="flex items-center gap-1.5 text-cyan-400">
+                <span className="flex items-center gap-1.5 text-cyan-600 dark:text-cyan-400 font-medium">
                   <Zap className="w-4 h-4" /> Verified Lifetime Updates
                 </span>
               </div>

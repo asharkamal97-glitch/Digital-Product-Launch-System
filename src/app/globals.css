@@ -3,7 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --bg-dark: #030712;
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-muted: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border-subtle: #e2e8f0;
+  --color-primary: #2563eb;
+  --color-secondary: #4f46e5;
+  --color-cyan: #0891b2;
+  --color-emerald: #059669;
+}
+
+html.dark, [data-theme="dark"] {
+  --bg-page: #030712;
+  --bg-card: #0e1422;
+  --bg-card-muted: #141c2e;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-subtle: rgba(255, 255, 255, 0.08);
   --color-primary: #6366f1;
   --color-secondary: #8b5cf6;
   --color-cyan: #06b6d4;
@@ -12,65 +32,108 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+html.dark {
   color-scheme: dark;
 }
 
 body {
-  background-color: #030712;
-  color: #f3f4f6;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom Cinematic Dark Scrollbars */
+/* Custom Scrollbars */
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
 }
 
-::-webkit-scrollbar-track {
+html.dark ::-webkit-scrollbar-track {
   background: #030712;
 }
 
-::-webkit-scrollbar-thumb {
+html.dark ::-webkit-scrollbar-thumb {
   background: #1f293d;
   border-radius: 9999px;
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-::-webkit-scrollbar-thumb:hover {
+html.dark ::-webkit-scrollbar-thumb:hover {
   background: #374151;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+  border: 1px solid #e2e8f0;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
 
 /* Glassmorphism utility classes */
 .glass-panel {
-  background: rgba(15, 23, 42, 0.65);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+html.dark .glass-panel {
+  background: rgba(15, 23, 42, 0.65);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: none;
 }
 
 .glass-panel-interactive {
-  background: rgba(15, 23, 42, 0.6);
+  background: #ffffff;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-panel-interactive:hover {
-  background: rgba(30, 41, 59, 0.7);
-  border-color: rgba(99, 102, 241, 0.4);
-  box-shadow: 0 10px 40px -10px rgba(99, 102, 241, 0.2);
+  border-color: rgba(37, 99, 235, 0.35);
+  box-shadow: 0 12px 30px -5px rgba(37, 99, 235, 0.1);
   transform: translateY(-2px);
 }
 
+html.dark .glass-panel-interactive {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+html.dark .glass-panel-interactive:hover {
+  background: rgba(30, 41, 59, 0.7);
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 10px 40px -10px rgba(99, 102, 241, 0.2);
+}
+
 .glass-pill {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(0, 0, 0, 0.04);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #e2e8f0;
+}
+
+html.dark .glass-pill {
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -78,21 +141,51 @@ body {
 .bg-grid-pattern {
   background-size: 40px 40px;
   background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
+
+html.dark .bg-grid-pattern {
+  background-image: 
     linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 }
 
 .bg-dot-pattern {
   background-size: 24px 24px;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+}
+
+html.dark .bg-dot-pattern {
   background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
 }
 
 .bg-radial-vignette {
+  background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(248, 250, 252, 0.6) 75%, #f8fafc 100%);
+}
+
+html.dark .bg-radial-vignette {
   background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(3, 7, 18, 0.8) 75%, #030712 100%);
 }
 
 /* Shimmer Animation */
 .shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #0f172a 0%,
+    #2563eb 25%,
+    #4f46e5 50%,
+    #2563eb 75%,
+    #0f172a 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+html.dark .shimmer-text {
   background: linear-gradient(
     90deg,
     #ffffff 0%,
@@ -105,7 +198,6 @@ body {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  animation: shimmer 4s linear infinite;
 }
 
 @keyframes shimmer {
@@ -119,6 +211,11 @@ body {
 
 /* Selection */
 ::selection {
+  background: rgba(37, 99, 235, 0.25);
+  color: #0f172a;
+}
+
+html.dark ::selection {
   background: rgba(99, 102, 241, 0.4);
   color: #ffffff;
 }

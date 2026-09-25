@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Edit3, Check, X, ShieldCheck, Sparkles, Palette, Copy } from 'lucide-react';
-import GlassCard from './GlassCard';
+import GlassCard from '@/components/GlassCard';
 
 export default function ReadyMadeSection() {
   const customizationSteps = [
@@ -27,18 +27,18 @@ export default function ReadyMadeSection() {
   ];
 
   return (
-    <section className="relative py-20 md:py-28 border-t border-white/5 bg-dark-950 overflow-hidden">
+    <section className="relative py-20 md:py-28 border-t border-slate-200 dark:border-white/5 bg-slate-50 dark:bg-dark-950 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-mono font-medium">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-600 dark:text-amber-400 text-xs font-mono font-medium">
             <Edit3 className="w-3.5 h-3.5" />
             TURNKEY DIGITAL ASSETS
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight font-display">
             DON&apos;T SPEND WEEKS STARTING FROM A BLANK PAGE.
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
             Starting from scratch is where most creators lose momentum. We give you commercial-ready templates and products that you can rebrand, customize, and deliver under your own brand name.
           </p>
         </div>
@@ -50,19 +50,19 @@ export default function ReadyMadeSection() {
             return (
               <GlassCard key={idx} className="p-6 space-y-4" glowColor="amber">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-mono font-bold text-amber-400">
+                  <span className="text-xs font-mono font-bold text-amber-600 dark:text-amber-400">
                     STEP {item.step}
                   </span>
-                  <div className="h-8 w-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+                  <div className="h-8 w-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 dark:text-amber-400">
                     <Icon className="w-4 h-4" />
                   </div>
                 </div>
 
-                <h3 className="text-lg font-bold text-white tracking-tight">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white tracking-tight">
                   {item.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
                   {item.desc}
                 </p>
               </GlassCard>
@@ -71,27 +71,27 @@ export default function ReadyMadeSection() {
         </div>
 
         {/* Commercial Licensing Transparency Box */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-dark-900 border border-white/10 space-y-6 max-w-4xl mx-auto">
+        <div className="p-6 sm:p-8 rounded-2xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-white/10 shadow-sm dark:shadow-none space-y-6 max-w-4xl mx-auto">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+            <div className="h-10 w-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-base font-bold text-white">
+              <h3 className="text-base font-bold text-slate-900 dark:text-white">
                 Commercial License & Usage Rights Transparency
               </h3>
-              <p className="text-xs text-slate-400">
+              <p className="text-xs text-slate-500 dark:text-slate-400">
                 Clear rules to protect both creators and our platform.
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-            <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-500/20 space-y-2">
-              <span className="text-emerald-400 font-bold flex items-center gap-1.5 font-mono">
+            <div className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-500/20 space-y-2">
+              <span className="text-emerald-700 dark:text-emerald-400 font-bold flex items-center gap-1.5 font-mono">
                 <Check className="w-4 h-4" /> WHAT YOU ARE ALLOWED TO DO:
               </span>
-              <ul className="space-y-1.5 text-slate-300">
+              <ul className="space-y-1.5 text-slate-700 dark:text-slate-300">
                 <li>✓ Customize and sell derivative digital products to end customers.</li>
                 <li>✓ Rebrand Canva templates, worksheets, and digital guides.</li>
                 <li>✓ Use reels, hooks, and captions to build organic social followings.</li>
@@ -99,11 +99,11 @@ export default function ReadyMadeSection() {
               </ul>
             </div>
 
-            <div className="p-4 rounded-xl bg-red-950/20 border border-red-500/20 space-y-2">
-              <span className="text-red-400 font-bold flex items-center gap-1.5 font-mono">
+            <div className="p-4 rounded-xl bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-500/20 space-y-2">
+              <span className="text-red-700 dark:text-red-400 font-bold flex items-center gap-1.5 font-mono">
                 <X className="w-4 h-4" /> WHAT IS STRICTLY PROHIBITED:
               </span>
-              <ul className="space-y-1.5 text-slate-300">
+              <ul className="space-y-1.5 text-slate-700 dark:text-slate-300">
                 <li>✗ Reselling the master Google Drive link or raw backend access.</li>
                 <li>✗ Selling this complete launch system wholesale as a competing bundle.</li>
                 <li>✗ Redistributing raw video course masterclasses without modification.</li>

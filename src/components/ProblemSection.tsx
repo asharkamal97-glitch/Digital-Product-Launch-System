@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { XCircle } from 'lucide-react';
-import GlassCard from './GlassCard';
+import GlassCard from '@/components/GlassCard';
 
 export default function ProblemSection() {
   const beginnerPains = [
@@ -39,18 +39,18 @@ export default function ProblemSection() {
   ];
 
   return (
-    <section className="relative py-20 md:py-28 border-t border-white/5 bg-dark-900/60 overflow-hidden">
+    <section className="relative py-20 md:py-28 border-t border-slate-200 dark:border-white/5 bg-slate-100/60 dark:bg-dark-900/60 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-xs font-mono font-medium">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-600 dark:text-red-400 text-xs font-mono font-medium">
             <XCircle className="w-3.5 h-3.5" />
             THE BEGINNER BOTTLENECK
           </div>
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight font-display">
             Why 95% of Beginners Fail Before Their First Sale
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
             Most people buy a 50GB zip file of random templates, download it to their desktop, feel completely overwhelmed, and never take action. You don&apos;t need more chaotic files — you need clarity.
           </p>
         </div>
@@ -60,26 +60,26 @@ export default function ProblemSection() {
           {beginnerPains.map((item, idx) => (
             <GlassCard key={idx} className="p-6 space-y-4" glowColor="purple">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-mono text-indigo-400 font-semibold">
+                <span className="text-xs font-mono text-indigo-600 dark:text-indigo-400 font-semibold">
                   BARRIER 0{idx + 1}
                 </span>
-                <span className="h-6 w-6 rounded-full bg-red-500/10 text-red-400 flex items-center justify-center text-xs">
+                <span className="h-6 w-6 rounded-full bg-red-500/10 text-red-600 dark:text-red-400 flex items-center justify-center text-xs font-bold">
                   ✕
                 </span>
               </div>
 
-              <h3 className="text-base font-bold text-white leading-snug">
+              <h3 className="text-base font-bold text-slate-900 dark:text-white leading-snug">
                 {item.title}
               </h3>
 
               <div className="space-y-3 text-xs">
-                <div className="p-3 rounded-lg bg-red-950/20 border border-red-500/15 text-slate-300">
-                  <span className="text-red-400 font-semibold block mb-0.5">The Trap:</span>
+                <div className="p-3 rounded-lg bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-500/15 text-slate-700 dark:text-slate-300">
+                  <span className="text-red-600 dark:text-red-400 font-semibold block mb-0.5">The Trap:</span>
                   {item.pain}
                 </div>
 
-                <div className="p-3 rounded-lg bg-emerald-950/20 border border-emerald-500/20 text-slate-200">
-                  <span className="text-emerald-400 font-semibold block mb-0.5">The System Fix:</span>
+                <div className="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-500/20 text-slate-800 dark:text-slate-200">
+                  <span className="text-emerald-600 dark:text-emerald-400 font-semibold block mb-0.5">The System Fix:</span>
                   {item.solution}
                 </div>
               </div>
@@ -90,10 +90,10 @@ export default function ProblemSection() {
         {/* Transition Bridge */}
         <div className="mt-14 text-center">
           <div className="inline-flex flex-col items-center gap-2">
-            <span className="text-xs font-mono uppercase tracking-widest text-slate-400">
+            <span className="text-xs font-mono uppercase tracking-widest text-slate-500 dark:text-slate-400">
               Transforming Chaos into a Clear Execution Pipeline
             </span>
-            <div className="h-8 w-px bg-gradient-to-b from-indigo-500 to-transparent" />
+            <div className="h-8 w-px bg-gradient-to-b from-blue-600 dark:from-indigo-500 to-transparent" />
           </div>
         </div>
       </div>

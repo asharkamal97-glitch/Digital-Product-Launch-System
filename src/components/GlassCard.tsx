@@ -18,11 +18,11 @@ export default function GlassCard({
   onClick,
 }: GlassCardProps) {
   const glowStyles = {
-    indigo: 'hover:border-indigo-500/40 hover:shadow-[0_0_30px_-5px_rgba(99,102,241,0.25)]',
-    cyan: 'hover:border-cyan-500/40 hover:shadow-[0_0_30px_-5px_rgba(6,182,212,0.25)]',
-    purple: 'hover:border-purple-500/40 hover:shadow-[0_0_30px_-5px_rgba(168,85,247,0.25)]',
-    amber: 'hover:border-amber-500/40 hover:shadow-[0_0_30px_-5px_rgba(245,158,11,0.25)]',
-    emerald: 'hover:border-emerald-500/40 hover:shadow-[0_0_30px_-5px_rgba(16,185,129,0.25)]',
+    indigo: 'hover:border-indigo-400 dark:hover:border-indigo-500/40 hover:shadow-[0_12px_30px_-5px_rgba(99,102,241,0.15)] dark:hover:shadow-[0_0_30px_-5px_rgba(99,102,241,0.25)]',
+    cyan: 'hover:border-cyan-400 dark:hover:border-cyan-500/40 hover:shadow-[0_12px_30px_-5px_rgba(6,182,212,0.15)] dark:hover:shadow-[0_0_30px_-5px_rgba(6,182,212,0.25)]',
+    purple: 'hover:border-purple-400 dark:hover:border-purple-500/40 hover:shadow-[0_12px_30px_-5px_rgba(168,85,247,0.15)] dark:hover:shadow-[0_0_30px_-5px_rgba(168,85,247,0.25)]',
+    amber: 'hover:border-amber-400 dark:hover:border-amber-500/40 hover:shadow-[0_12px_30px_-5px_rgba(245,158,11,0.15)] dark:hover:shadow-[0_0_30px_-5px_rgba(245,158,11,0.25)]',
+    emerald: 'hover:border-emerald-400 dark:hover:border-emerald-500/40 hover:shadow-[0_12px_30px_-5px_rgba(16,185,129,0.15)] dark:hover:shadow-[0_0_30px_-5px_rgba(16,185,129,0.25)]',
     none: '',
   };
 
@@ -30,14 +30,16 @@ export default function GlassCard({
     <div
       onClick={onClick}
       className={`
-        relative rounded-2xl border border-white/[0.08] bg-slate-900/60 
+        relative rounded-2xl border border-slate-200 dark:border-white/[0.08]
+        bg-white dark:bg-slate-900/60
+        shadow-sm dark:shadow-none
         backdrop-blur-xl transition-all duration-300
         ${interactive ? `cursor-pointer hover:-translate-y-1 ${glowStyles[glowColor]}` : ''}
         ${className}
       `}
     >
-      {/* Subtle top edge highlight */}
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent rounded-t-2xl pointer-events-none" />
+      {/* Subtle top edge highlight in dark mode */}
+      <div className="hidden dark:block absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent rounded-t-2xl pointer-events-none" />
       {children}
     </div>
   );

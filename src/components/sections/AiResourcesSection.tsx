@@ -1,9 +1,8 @@
 'use client';
 
 import React from 'react';
-import { siteConfig } from '@/config/siteConfig';
-import { Bot, Cpu, Terminal, Sparkles, Workflow, Zap, Code2, ArrowRight } from 'lucide-react';
-import GlassCard from '@/components/ui/GlassCard';
+import { Bot, Terminal, Sparkles, Workflow } from 'lucide-react';
+import GlassCard from '@/components/GlassCard';
 
 export default function AiResourcesSection() {
   const aiStacks = [
@@ -38,18 +37,18 @@ export default function AiResourcesSection() {
   ];
 
   return (
-    <section className="relative py-20 md:py-28 border-t border-white/5 bg-dark-950 overflow-hidden">
+    <section className="relative py-20 md:py-28 border-t border-slate-200 dark:border-white/5 bg-slate-50 dark:bg-dark-950 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-mono font-medium">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-600 dark:text-purple-400 text-xs font-mono font-medium">
             <Bot className="w-3.5 h-3.5" />
             AI MULTIPLIER STACK
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight font-display">
             15,000+ AI Agents, Automation Blueprints & Prompts
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
             Stop using vague, one-sentence prompts. We provide battle-tested AI workflows and agent architectures that act like an entire in-house marketing team.
           </p>
         </div>
@@ -61,28 +60,28 @@ export default function AiResourcesSection() {
             return (
               <GlassCard key={idx} className="p-6 sm:p-8 space-y-5" glowColor="purple">
                 <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-mono text-purple-400 uppercase tracking-wider font-semibold">
+                  <span className="text-[11px] font-mono text-purple-600 dark:text-purple-400 uppercase tracking-wider font-semibold">
                     {item.category}
                   </span>
-                  <div className="h-9 w-9 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                  <div className="h-9 w-9 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-600 dark:text-purple-400">
                     <Icon className="w-4 h-4" />
                   </div>
                 </div>
 
                 <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white tracking-tight">
                     {item.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
 
-                <div className="flex flex-wrap gap-2 pt-2 border-t border-white/5">
+                <div className="flex flex-wrap gap-2 pt-2 border-t border-slate-200 dark:border-white/5">
                   {item.tags.map((tag, tIdx) => (
                     <span
                       key={tIdx}
-                      className="px-2.5 py-1 rounded-md bg-dark-850 border border-white/10 text-[11px] font-mono text-slate-300"
+                      className="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-dark-850 border border-slate-200 dark:border-white/10 text-[11px] font-mono text-slate-700 dark:text-slate-300"
                     >
                       {tag}
                     </span>
@@ -94,13 +93,13 @@ export default function AiResourcesSection() {
         </div>
 
         {/* Code Snippet Box */}
-        <div className="max-w-4xl mx-auto rounded-2xl bg-dark-900 border border-white/10 p-5 sm:p-6 font-mono text-xs text-slate-300 space-y-3">
-          <div className="flex items-center justify-between text-slate-400 pb-2 border-b border-white/5">
+        <div className="max-w-4xl mx-auto rounded-2xl bg-white dark:bg-dark-900 border border-slate-200 dark:border-white/10 shadow-sm dark:shadow-none p-5 sm:p-6 font-mono text-xs text-slate-700 dark:text-slate-300 space-y-3">
+          <div className="flex items-center justify-between text-slate-500 dark:text-slate-400 pb-2 border-b border-slate-200 dark:border-white/5">
             <span>SAMPLE_AGENT_BLUEPRINT.prompt</span>
-            <span className="text-purple-400">ROLE: LEAD_COPYWRITER_AGENT</span>
+            <span className="text-purple-600 dark:text-purple-400 font-semibold">ROLE: LEAD_COPYWRITER_AGENT</span>
           </div>
-          <p className="text-slate-400 leading-relaxed">
-            &ldquo;Act as a direct-response digital product copywriter. Analyze the target customer avatar, extract top 3 core objections, and write a high-retention 3-part sales page outline featuringPAS framing, social proof anchors, and frictionless CTAs...&rdquo;
+          <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+            &ldquo;Act as a direct-response digital product copywriter. Analyze the target customer avatar, extract top 3 core objections, and write a high-retention 3-part sales page outline featuring PAS framing, social proof anchors, and frictionless CTAs...&rdquo;
           </p>
         </div>
       </div>

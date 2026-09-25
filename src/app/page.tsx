@@ -32,7 +32,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="relative min-h-screen bg-dark-950 text-slate-100 flex flex-col font-sans selection:bg-indigo-600/40 selection:text-white">
+    <div className="relative min-h-screen bg-slate-50 dark:bg-dark-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans selection:bg-blue-600/20 dark:selection:bg-indigo-600/40 selection:text-slate-900 dark:selection:text-white transition-colors duration-200">
       {/* Background ambient lighting effects */}
       <AmbientGlow />
 
@@ -41,7 +41,7 @@ export default function HomePage() {
 
       {/* Main Content Sections (1 to 15 in exact requested order) */}
       <main className="flex-grow">
-        {/* 1. Cinematic Hero */}
+        {/* 1. Hero Section */}
         <HeroSection />
 
         {/* 2. Problem / Beginner Pain */}

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { siteConfig } from '@/config/siteConfig';
 import { HelpCircle, ChevronDown } from 'lucide-react';
-import GlassCard from './GlassCard';
+import GlassCard from '@/components/GlassCard';
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -20,18 +20,18 @@ export default function FaqSection() {
   };
 
   return (
-    <section id="faq" className="relative py-20 md:py-28 border-t border-white/5 bg-dark-900/60 overflow-hidden">
+    <section id="faq" className="relative py-20 md:py-28 border-t border-slate-200 dark:border-white/5 bg-slate-100/60 dark:bg-dark-900/60 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-mono font-medium">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-500/10 dark:bg-indigo-500/10 border border-blue-500/20 dark:border-indigo-500/20 text-blue-600 dark:text-indigo-400 text-xs font-mono font-medium">
             <HelpCircle className="w-3.5 h-3.5" />
             FREQUENTLY ASKED QUESTIONS
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight font-display">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight font-display">
             Clear, Transparent Answers
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
             Everything you need to know about the system, licensing, Google Drive access, and deliverables.
           </p>
         </div>
@@ -47,8 +47,8 @@ export default function FaqSection() {
               }}
               className={`px-3.5 py-1.5 rounded-lg text-xs font-mono transition-all ${
                 selectedCategory === cat
-                  ? 'bg-indigo-600 text-white shadow-glow-sm'
-                  : 'bg-dark-850 text-slate-400 border border-white/5 hover:text-slate-200'
+                  ? 'bg-blue-600 dark:bg-indigo-600 text-white shadow-sm dark:shadow-glow-sm font-semibold'
+                  : 'bg-white dark:bg-dark-850 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-white/5 hover:text-slate-900 dark:hover:text-slate-200 shadow-sm dark:shadow-none'
               }`}
             >
               {cat}
@@ -63,7 +63,7 @@ export default function FaqSection() {
             return (
               <GlassCard
                 key={idx}
-                className="overflow-hidden border-white/10"
+                className="overflow-hidden border-slate-200 dark:border-white/10"
                 glowColor="indigo"
               >
                 <button
@@ -71,22 +71,22 @@ export default function FaqSection() {
                   className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none"
                 >
                   <div className="flex items-center gap-3">
-                    <span className="text-xs font-mono text-indigo-400 font-semibold">
+                    <span className="text-xs font-mono text-blue-600 dark:text-indigo-400 font-bold">
                       Q{idx + 1}.
                     </span>
-                    <span className="text-sm sm:text-base font-semibold text-white">
+                    <span className="text-sm sm:text-base font-semibold text-slate-900 dark:text-white">
                       {faq.question}
                     </span>
                   </div>
                   <ChevronDown
                     className={`w-4 h-4 text-slate-400 transition-transform duration-300 flex-shrink-0 ${
-                      isOpen ? 'rotate-180 text-indigo-400' : ''
+                      isOpen ? 'rotate-180 text-blue-600 dark:text-indigo-400' : ''
                     }`}
                   />
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-white/5 pt-3">
                     <p>{faq.answer}</p>
                   </div>
                 )}
@@ -96,11 +96,11 @@ export default function FaqSection() {
         </div>
 
         {/* Support Note */}
-        <div className="mt-12 text-center text-xs text-slate-400">
+        <div className="mt-12 text-center text-xs text-slate-500 dark:text-slate-400">
           Have a specific question not covered here? Reach out directly to{' '}
           <a
             href={`mailto:${siteConfig.links.supportEmail}`}
-            className="text-indigo-400 hover:text-indigo-300 underline font-mono"
+            className="text-blue-600 dark:text-indigo-400 hover:underline font-mono font-semibold"
           >
             {siteConfig.links.supportEmail}
           </a>

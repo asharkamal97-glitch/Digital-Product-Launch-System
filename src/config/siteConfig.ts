@@ -87,13 +87,13 @@ export const siteConfig: SiteConfig = {
     title: "Digital Product Launch System — Learn, Build, Market & Sell",
     description: "Learn how digital products work — then use ready-made resources, high-retention content, AI automation agents, and organic traffic frameworks to launch your digital product business.",
     ogImage: "/images/og-preview.png",
-    supportEmail: "support@launchsystem.io",
+    supportEmail: "digitalproductlaunchsystem@gmail.com",
   },
   links: {
     checkoutUrl: "https://whop.com/digitalproductlaunchsystem/digital-product-launchs-system/", // Updated Whop checkout link
     googleDrivePreviewUrl: "https://drive.google.com/drive/folders/launch-system-hub", // Update with your actual master Drive link
     instantAccessUrl: "#checkout",
-    supportEmail: "support@launchsystem.io",
+    supportEmail: "digitalproductlaunchsystem@gmail.com",
   },
   pricing: {
     regularPrice: 297,
@@ -348,7 +348,7 @@ export const siteConfig: SiteConfig = {
     },
     {
       question: "What if I have questions or need support?",
-      answer: "We offer dedicated customer support via email at support@launchsystem.io. Our team is available to assist you with access, folder navigation, or technical questions.",
+      answer: "We offer dedicated customer support via email at digitalproductlaunchsystem@gmail.com. Our team is available to assist you with access, folder navigation, or technical questions.",
       category: "Access"
     }
   ],
@@ -370,7 +370,7 @@ We use your information exclusively to:
 We respect your privacy and will never sell, rent, or trade your personal data to third parties. Data is only shared with trusted service providers necessary for delivering our digital services (e.g., payment gateways, cloud hosting, email delivery).
 
 4. YOUR RIGHTS
-Depending on your location (such as under GDPR or CCPA), you have the right to access, rectify, or request deletion of your personal information. Contact us at support@launchsystem.io to exercise these rights.`,
+Depending on your location (such as under GDPR or CCPA), you have the right to access, rectify, or request deletion of your personal information. Contact us at digitalproductlaunchsystem@gmail.com to exercise these rights.`,
     
     termsOfService: `DIGITAL PRODUCT LAUNCH SYSTEM — TERMS OF SERVICE
 Last Updated: September 2026
@@ -396,7 +396,7 @@ DIGITAL PRODUCTS POLICY:
 Because the Digital Product Launch System provides immediate, irrevocable, and full digital access to downloadable master assets, 15K+ AI agents, 10K+ video files, 1,000+ courses, and proprietary strategy blueprints via Google Drive upon checkout completion:
 
 1. ALL SALES ARE FINAL once the digital link has been generated and delivered, except in cases of verified duplicate billing or technical non-delivery.
-2. ACCESS GUARANTEE: If you experience any technical difficulties accessing your Google Drive folders or files, our priority support team guarantees to resolve access within 24 hours of notification at support@launchsystem.io.
+2. ACCESS GUARANTEE: If you experience any technical difficulties accessing your Google Drive folders or files, our priority support team guarantees to resolve access within 24 hours of notification at digitalproductlaunchsystem@gmail.com.
 3. FAIRNESS COMMITMENT: We provide extensive transparent previews, interactive folder manifests, and clear curriculum breakdowns before you buy to ensure the system is the right fit for your goals.`,
 
     licenseUsageRights: `DIGITAL PRODUCT LAUNCH SYSTEM — COMMERCIAL LICENSE & USAGE RIGHTS

@@ -31,8 +31,8 @@ export default function SellingStrategySection() {
       num: "03",
       name: "CONTENT",
       icon: Video,
-      headline: "Scroll-Stopping Short Form",
-      description: "High-retention aesthetic and faceless vertical reels paired with targeted 3-second hooks that speak directly to your target audience.",
+      headline: "High-Retention Messaging",
+      description: "High-impact social content and carousel frameworks paired with targeted 3-second hooks that speak directly to your target audience.",
       keyRule: "Retention is king. Hook them immediately and deliver high-density value.",
     },
     {
@@ -41,7 +41,7 @@ export default function SellingStrategySection() {
       name: "TRAFFIC",
       icon: Users,
       headline: "Organic Algorithm Funnel",
-      description: "Viewers who watch your reels click your profile link or comment a trigger keyword to receive an automated free starter guide in their DMs.",
+      description: "Viewers who engage with your content click your profile link or comment a trigger keyword to receive an automated free starter guide in their DMs.",
       keyRule: "Never ask for the sale in the first 5 seconds; build curiosity first.",
     },
     {
@@ -79,7 +79,7 @@ export default function SellingStrategySection() {
             The 6-Part Selling Pipeline
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
-            Selling digital products is not luck. It is an engineered 6-stage pipeline that systematically guides a stranger from scrolling on social media to completing checkout.
+            Selling digital products is not luck. It is an engineered 6-stage pipeline that systematically guides a stranger from discovering your content to completing checkout.
           </p>
         </div>
 

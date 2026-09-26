@@ -7,8 +7,8 @@ import GlassCard from '@/components/GlassCard';
 export default function TrafficSystemSection() {
   const trafficEngines = [
     {
-      title: "Algorithmic Short-Form Distribution",
-      desc: "How short-form recommendation engines categorize your content, calculate retention velocity, and distribute vertical videos to non-followers without ad spend.",
+      title: "Algorithmic Organic Distribution",
+      desc: "How social media recommendation engines categorize your content, calculate retention velocity, and distribute posts to non-followers without ad spend.",
       icon: Eye,
       tag: "ORGANIC REACH",
     },
@@ -20,13 +20,13 @@ export default function TrafficSystemSection() {
     },
     {
       title: "Search & Profile SEO Optimization",
-      desc: "Optimize your profile bio, handle, and video descriptions so prospects searching for your niche find your store at the exact moment they want a solution.",
+      desc: "Optimize your profile bio, handle, and post descriptions so prospects searching for your niche find your store at the exact moment they want a solution.",
       icon: Search,
       tag: "INTENT TRAFFIC",
     },
     {
       title: "AI-Assisted Content Repurposing",
-      desc: "Create one core idea, and use our AI agent workflows to turn it into 5 reels, 3 carousel scripts, 2 newsletter emails, and 10 social threads effortlessly.",
+      desc: "Create one core idea, and use our AI agent workflows to turn it into short-form posts, carousel scripts, newsletter emails, and social threads effortlessly.",
       icon: Share2,
       tag: "REPURPOSING",
     }

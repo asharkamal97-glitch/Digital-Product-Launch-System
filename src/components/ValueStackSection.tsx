@@ -7,19 +7,9 @@ import { Check, ShieldCheck, ArrowRight, Sparkles, FolderLock, Zap, Lock } from 
 export default function ValueStackSection() {
   const valueItems = [
     {
-      title: "The Complete 7-Stage Digital Product Video Curriculum",
-      desc: "Step-by-step masterclasses covering strategy, niche validation, store setup, organic traffic, and offer psychology.",
-      value: "$497",
-    },
-    {
       title: "15,000+ AI Agents, Automation Workflows & Prompts",
       desc: "Custom GPT configurations, Claude prompts, Make/n8n workflows, and Midjourney image prompt parameters.",
       value: "$350",
-    },
-    {
-      title: "10,000+ Ready-to-Post HD/4K Short-Form Reels Vault",
-      desc: "Faceless, luxury, tech, and aesthetic vertical 9:16 clips paired with 1,000+ viral hook scripts.",
-      value: "$450",
     },
     {
       title: "500+ Commercial Ready-Made Digital Products",
@@ -28,7 +18,7 @@ export default function ValueStackSection() {
     },
     {
       title: "1,000+ Comprehensive Skill Video Courses",
-      desc: "Masterclasses on copywriting, funnel design, graphic branding, email systems, and audience growth.",
+      desc: "Video modules on copywriting, funnel design, store setup, email systems, and audience growth.",
       value: "$850",
     },
     {
@@ -38,7 +28,7 @@ export default function ValueStackSection() {
     },
     {
       title: "Lifetime Google Drive Master Cloud Access & Updates",
-      desc: "Instant access to all 9 categorized folders with regular monthly asset additions and zero recurring fees.",
+      desc: "Instant access to all categorized resource folders with regular additions and zero recurring fees.",
       value: "$397",
     },
   ];
@@ -56,7 +46,7 @@ export default function ValueStackSection() {
             Everything You Need in One Unified System
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
-            No monthly subscriptions. No hidden up-sells. You get lifetime access to the complete strategic education, asset library, and Google Drive Launch Hub.
+            No monthly subscriptions. No hidden up-sells. You get lifetime access to the complete launch roadmap, asset library, and Google Drive Launch Hub.
           </p>
         </div>
 
@@ -71,7 +61,7 @@ export default function ValueStackSection() {
                     WHAT&apos;S INCLUDED IN THE LAUNCH SYSTEM:
                   </span>
                   <span className="text-xs font-mono text-slate-500 dark:text-slate-400">
-                    Total Value: <strong className="text-slate-900 dark:text-white font-bold">$3,391</strong>
+                    Total Value: <strong className="text-slate-900 dark:text-white font-bold">$2,444</strong>
                   </span>
                 </div>
 

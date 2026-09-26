@@ -13,7 +13,6 @@ import SystemIntroSection from '@/components/SystemIntroSection';
 import ProductLibrarySection from '@/components/ProductLibrarySection';
 import ShowcaseSection from '@/components/ShowcaseSection';
 import ReadyMadeSection from '@/components/ReadyMadeSection';
-import ContentLibrarySection from '@/components/ContentLibrarySection';
 import AiResourcesSection from '@/components/AiResourcesSection';
 import TrafficSystemSection from '@/components/TrafficSystemSection';
 import SellingStrategySection from '@/components/SellingStrategySection';
@@ -39,51 +38,48 @@ export default function HomePage() {
       {/* Main Header / Navigation */}
       <Navbar onOpenLegal={handleOpenLegal} />
 
-      {/* Main Content Sections (1 to 15 in exact requested order) */}
+      {/* Main Content Sections */}
       <main className="flex-grow">
         {/* 1. Hero Section */}
         <HeroSection />
 
-        {/* 2. Problem / Beginner Pain */}
+        {/* 2. Problem / Beginner Bottlenecks */}
         <ProblemSection />
 
-        {/* 3. Explain the complete digital-product journey (LEARN → SELL) */}
+        {/* 3. 7-Step Digital Product Launch Roadmap (LEARN → SELL) */}
         <JourneySection />
 
         {/* 4. Introduce the system ("We don't just give you files...") */}
         <SystemIntroSection />
 
-        {/* 5. Show the actual product library (AI Agents, Courses, Reels, Products, Ebooks) */}
+        {/* 5. Show the actual product library (AI Agents, Courses, Products, Ebooks) */}
         <ProductLibrarySection />
 
-        {/* 6. Show real product showcase/mockup inspector (No fake reviews) */}
+        {/* 6. Real product showcase/mockup inspector */}
         <ShowcaseSection />
 
-        {/* 7. Show ready-made digital products & commercial licensing */}
+        {/* 7. Ready-made digital products & commercial licensing */}
         <ReadyMadeSection />
 
-        {/* 8. Show content library (10K+ Reels, hooks, scripts) */}
-        <ContentLibrarySection />
-
-        {/* 9. Show AI resources (15K+ agents, custom GPTs, prompts) */}
+        {/* 8. AI resources (15K+ agents, custom GPTs, prompts) */}
         <AiResourcesSection />
 
-        {/* 10. Explain traffic system (Zero ad spend organic distribution) */}
+        {/* 9. Traffic system (Zero ad spend organic distribution) */}
         <TrafficSystemSection />
 
-        {/* 11. Explain selling strategy (PRODUCT → CHECKOUT pipeline) */}
+        {/* 10. Selling strategy (PRODUCT → CHECKOUT pipeline) */}
         <SellingStrategySection />
 
-        {/* 12. Full contents / value stack section */}
+        {/* 11. Full contents / value stack section */}
         <ValueStackSection />
 
-        {/* 13. How the buyer starts: Google Drive "Launch Hub" Experience (00 to 08) */}
+        {/* 12. Google Drive "Launch Hub" Experience (00 to 08) */}
         <LaunchHubSection />
 
-        {/* 14. FAQ */}
+        {/* 13. FAQ */}
         <FaqSection />
 
-        {/* 15. Final CTA */}
+        {/* 14. Final CTA */}
         <FinalCtaSection />
       </main>
 

@@ -24,14 +24,14 @@ export default function SystemIntroSection() {
       icon: Rocket,
       title: "AI Leverage & Agents",
       subtitle: "10x Output Multiplier",
-      description: "15,000+ AI prompt blueprints, custom GPT workflows, and automation templates to write copy, create scripts, and handle customer flows.",
+      description: "15,000+ AI prompt blueprints, custom GPT workflows, and automation templates to write copy, create content, and handle customer flows.",
       color: "purple",
     },
     {
       icon: Target,
       title: "Organic Traffic Engine",
       subtitle: "Zero Ad Spend Distribution",
-      description: "10,000+ high-retention reels, viral hook formulas, and DM automation blueprints designed to pull targeted buyers directly to your page.",
+      description: "High-retention hook formulas, caption copywriting frameworks, and organic distribution playbooks designed to pull targeted buyers to your page.",
       color: "emerald",
     }
   ];

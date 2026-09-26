@@ -2,16 +2,15 @@
 
 import React, { useState } from 'react';
 import { siteConfig } from '@/config/siteConfig';
-import { Folder, Eye, Film, Bot, GraduationCap, Sparkles } from 'lucide-react';
+import { Folder, Eye, Bot, GraduationCap, Sparkles } from 'lucide-react';
 import GlassCard from '@/components/GlassCard';
 
 export default function ShowcaseSection() {
-  const [activeTab, setActiveTab] = useState<'drive' | 'courses' | 'reels' | 'agents' | 'canva'>('drive');
+  const [activeTab, setActiveTab] = useState<'drive' | 'courses' | 'agents' | 'canva'>('drive');
 
   const showcaseTabs = [
     { id: 'drive', label: 'Drive File Hub', icon: Folder },
     { id: 'courses', label: '1,000+ Video Courses', icon: GraduationCap },
-    { id: 'reels', label: '10K Reels Vault', icon: Film },
     { id: 'agents', label: '15K AI Agents', icon: Bot },
     { id: 'canva', label: 'Canva Ready Products', icon: Sparkles },
   ];
@@ -107,9 +106,9 @@ export default function ShowcaseSection() {
                 <div className="flex items-center justify-between">
                   <h4 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
                     <GraduationCap className="w-4 h-4 text-purple-600 dark:text-purple-400" />
-                    1,000+ Video Courses & Strategy Modules
+                    1,000+ Video Courses & Skill Modules
                   </h4>
-                  <span className="text-xs font-mono text-slate-500 dark:text-slate-400">Step-by-Step Video Curriculum</span>
+                  <span className="text-xs font-mono text-slate-500 dark:text-slate-400">Comprehensive Video Training</span>
                 </div>
 
                 <div className="p-5 rounded-xl bg-slate-50 dark:bg-dark-950/80 border border-slate-200 dark:border-white/10 space-y-4 shadow-sm dark:shadow-none">
@@ -118,52 +117,25 @@ export default function ShowcaseSection() {
                       ✦
                     </div>
                     <div>
-                      <h5 className="text-sm font-bold text-slate-900 dark:text-white">Master Strategy Curriculum</h5>
-                      <p className="text-xs text-slate-600 dark:text-slate-400">Structured video training covering digital product economics, store setups, and organic scaling</p>
+                      <h5 className="text-sm font-bold text-slate-900 dark:text-white">Practical Skill Modules</h5>
+                      <p className="text-xs text-slate-600 dark:text-slate-400">Structured training modules covering digital marketing, copywriting, store setups, and organic scaling</p>
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                     <div className="p-3 rounded-lg bg-white dark:bg-dark-850 border border-slate-200 dark:border-white/5 text-xs text-slate-700 dark:text-slate-300 shadow-sm dark:shadow-none">
-                      <span className="text-blue-600 dark:text-indigo-400 font-mono block mb-1 font-semibold">01. ECONOMICS & NICHE</span>
-                      Pricing strategy, offer validation, and unit economics.
+                      <span className="text-blue-600 dark:text-indigo-400 font-mono block mb-1 font-semibold">01. COPYWRITING & OFFERS</span>
+                      Direct-response copywriting, offer creation, and customer psychology.
                     </div>
                     <div className="p-3 rounded-lg bg-white dark:bg-dark-850 border border-slate-200 dark:border-white/5 text-xs text-slate-700 dark:text-slate-300 shadow-sm dark:shadow-none">
-                      <span className="text-cyan-600 dark:text-cyan-400 font-mono block mb-1 font-semibold">02. PAGE ARCHITECTURE</span>
-                      High-converting wireframes, hooks, and checkout flows.
+                      <span className="text-cyan-600 dark:text-cyan-400 font-mono block mb-1 font-semibold">02. STORE ARCHITECTURE</span>
+                      High-converting wireframes, landing pages, and checkout setups.
                     </div>
                     <div className="p-3 rounded-lg bg-white dark:bg-dark-850 border border-slate-200 dark:border-white/5 text-xs text-slate-700 dark:text-slate-300 shadow-sm dark:shadow-none">
                       <span className="text-emerald-600 dark:text-emerald-400 font-mono block mb-1 font-semibold">03. ORGANIC REACH</span>
-                      Short-form algorithm playbooks and distribution.
+                      Audience building strategies, engagement, and organic traffic distribution.
                     </div>
                   </div>
-                </div>
-              </div>
-            )}
-
-            {activeTab === 'reels' && (
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <h4 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                    <Film className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
-                    10,000+ Ready-to-Post Reels Video Vault
-                  </h4>
-                  <span className="text-xs font-mono text-slate-500 dark:text-slate-400">HD / 4K Vertical 9:16</span>
-                </div>
-
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                  {[
-                    { label: "Luxury & Aesthetic", count: "2,500+ Clips", tag: "High Status" },
-                    { label: "Tech & Cyberpunk", count: "2,000+ Clips", tag: "Modern Edge" },
-                    { label: "Faceless Lifestyle", count: "3,500+ Clips", tag: "Universal" },
-                    { label: "Productivity & Mindset", count: "2,000+ Clips", tag: "Educational" },
-                  ].map((cat, i) => (
-                    <div key={i} className="p-3.5 rounded-xl bg-slate-50 dark:bg-dark-850 border border-slate-200 dark:border-white/5 space-y-1 shadow-sm dark:shadow-none">
-                      <span className="text-[10px] font-mono text-cyan-600 dark:text-cyan-400 uppercase font-semibold">{cat.tag}</span>
-                      <h5 className="text-xs font-bold text-slate-900 dark:text-white">{cat.label}</h5>
-                      <span className="text-[11px] text-slate-500 dark:text-slate-400 block">{cat.count}</span>
-                    </div>
-                  ))}
                 </div>
               </div>
             )}

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { BookOpen, CheckSquare, Sparkles, Layout, Video, Users, ShoppingBag, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { BookOpen, CheckSquare, Sparkles, Layout, Share2, Users, ShoppingBag, ArrowRight, CheckCircle2 } from 'lucide-react';
 import GlassCard from '@/components/GlassCard';
 
 export default function JourneySection() {
@@ -10,23 +10,23 @@ export default function JourneySection() {
   const steps = [
     {
       id: "learn",
-      stage: "STAGE 01",
+      stage: "STEP 01",
       name: "LEARN",
       title: "Master Digital Product Mechanics",
       icon: BookOpen,
       tag: "Foundational Strategy",
       description: "Understand unit economics, digital distribution models, pricing psychology, and the fundamental differences between low-ticket and mid-ticket digital offers.",
       deliverables: [
-        "Digital Product Economics Masterclass (Video)",
-        "Offer Viability & Niche Selection Framework",
-        "Beginner Tech Stack Blueprint (Stan / Whop / Gumroad)",
+        "Digital Product Economics & Pricing Framework",
+        "Offer Viability & Niche Selection Matrix",
+        "Beginner Store Setup Blueprint (Stan / Whop / Gumroad)",
         "Zero-Ad-Spend Business Model Breakdown"
       ],
       outcome: "You understand exactly how digital products make sales without guessing or getting overwhelmed."
     },
     {
       id: "choose",
-      stage: "STAGE 02",
+      stage: "STEP 02",
       name: "CHOOSE",
       title: "Select Your High-Demand Niche & Product",
       icon: CheckSquare,
@@ -42,7 +42,7 @@ export default function JourneySection() {
     },
     {
       id: "prepare",
-      stage: "STAGE 03",
+      stage: "STEP 03",
       name: "PREPARE",
       title: "Rebrand & Customize Your Assets",
       icon: Sparkles,
@@ -58,7 +58,7 @@ export default function JourneySection() {
     },
     {
       id: "build",
-      stage: "STAGE 04",
+      stage: "STEP 04",
       name: "BUILD",
       title: "Set Up Your High-Converting Sales Page",
       icon: Layout,
@@ -74,28 +74,28 @@ export default function JourneySection() {
     },
     {
       id: "post",
-      stage: "STAGE 05",
+      stage: "STEP 05",
       name: "POST",
-      title: "Deploy High-Retention Short-Form Content",
-      icon: Video,
-      tag: "Content Deployment",
-      description: "Skip filming awkward videos. Select from 10,000+ ready-to-post HD reels, pair them with viral hooks, and schedule your posts effortlessly.",
+      title: "Deploy High-Impact Content & Hook Frameworks",
+      icon: Share2,
+      tag: "Content Strategy",
+      description: "Structure high-retention content using proven 3-second hook frameworks, caption copywriting templates, and structured posting calendars.",
       deliverables: [
-        "10,000+ HD/4K Faceless & Aesthetic Video Vault",
-        "1,000+ Viral Hook & Retention Script Swipe File",
-        "Plug-and-Play High-Converting Captions",
-        "30-Day Batch Content Calendar & Scheduler Template"
+        "1,000+ Viral Hook & Retention Frameworks",
+        "Plug-and-Play High-Converting Caption Templates",
+        "30-Day Content Planning Calendar Template",
+        "AI-Assisted Content Repurposing Workflows"
       ],
-      outcome: "You maintain a consistent, high-end social media presence without spending hours filming."
+      outcome: "You maintain a consistent, structured social media publishing strategy without burning out."
     },
     {
       id: "attract",
-      stage: "STAGE 06",
+      stage: "STEP 06",
       name: "ATTRACT",
       title: "Capture Targeted Organic Viewers",
       icon: Users,
       tag: "Organic Traffic",
-      description: "Leverage social media algorithms (Instagram Reels, TikTok, YouTube Shorts, X) to turn organic viewers into leads using free lead magnets.",
+      description: "Leverage social media algorithms (Instagram, TikTok, YouTube Shorts, X) to turn organic viewers into leads using free starter guides.",
       deliverables: [
         "Comment-to-DM Freebie Funnel Automation Blueprint",
         "Algorithmic Watch-Time & Save-Trigger Frameworks",
@@ -106,7 +106,7 @@ export default function JourneySection() {
     },
     {
       id: "sell",
-      stage: "STAGE 07",
+      stage: "STEP 07",
       name: "SELL",
       title: "Convert Attention Into Lifetime Customers",
       icon: ShoppingBag,
@@ -131,13 +131,13 @@ export default function JourneySection() {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-500/10 dark:bg-indigo-500/10 border border-blue-500/20 dark:border-indigo-500/20 text-blue-600 dark:text-indigo-400 text-xs font-mono font-medium">
             <Sparkles className="w-3.5 h-3.5" />
-            THE SYSTEM ROADMAP
+            THE LAUNCH PROGRESSION
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight font-display">
-            The Complete 7-Stage Customer Journey
+            7-Step Digital Product Launch Roadmap
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
-            From complete beginner to launching your own branded digital product. Click through each stage to explore the exact strategy and resources included.
+            From beginner to launching your own branded digital product. Click through each step to explore the exact strategy and resources included.
           </p>
         </div>
 
@@ -210,7 +210,7 @@ export default function JourneySection() {
               {/* Deliverables List */}
               <div className="space-y-2.5 pt-2">
                 <span className="text-xs font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 block font-semibold">
-                  What You Get in This Stage:
+                  What You Get in This Step:
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   {current.deliverables.map((item, i) => (
@@ -242,14 +242,14 @@ export default function JourneySection() {
                   onClick={() => setActiveStepIndex((prev) => (prev > 0 ? prev - 1 : steps.length - 1))}
                   className="text-xs text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors"
                 >
-                  ← Previous Stage
+                  ← Previous Step
                 </button>
 
                 <button
                   onClick={() => setActiveStepIndex((prev) => (prev < steps.length - 1 ? prev + 1 : 0))}
                   className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 dark:bg-indigo-600 dark:hover:bg-indigo-500 text-white text-xs font-semibold flex items-center gap-1.5 transition-all shadow-sm"
                 >
-                  <span>Next Stage</span>
+                  <span>Next Step</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>

@@ -14,7 +14,7 @@ export default function ProblemSection() {
     {
       title: "“I Don't Know How Digital Products Work”",
       pain: "Assuming you need complex software, expensive developers, or complicated tech stacks just to deliver a file.",
-      solution: "Step-by-step video blueprint showing digital product mechanics, delivery automation, and zero-code stores.",
+      solution: "Step-by-step launch blueprint showing digital product mechanics, delivery automation, and zero-code stores.",
     },
     {
       title: "“I Don't Know How to Build a High-Converting Page”",
@@ -23,8 +23,8 @@ export default function ProblemSection() {
     },
     {
       title: "“What Kind of Content Should I Post?”",
-      pain: "Wasting hours filming awkward videos or struggling to create reels that get zero reach and zero engagement.",
-      solution: "10,000+ HD aesthetic & faceless reels library paired with 1,000+ viral hooks and caption scripts.",
+      pain: "Struggling to write compelling hooks or creating posts that get zero reach and zero engagement.",
+      solution: "Proven hook frameworks, caption copywriting templates, and structured content scheduling workflows.",
     },
     {
       title: "“How Do I Use AI Without Getting Overwhelmed?”",
@@ -51,7 +51,7 @@ export default function ProblemSection() {
             Why 95% of Beginners Fail Before Their First Sale
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
-            Most people buy a 50GB zip file of random templates, download it to their desktop, feel completely overwhelmed, and never take action. You don&apos;t need more chaotic files — you need clarity.
+            Most people buy a 50GB zip file of random files, download it to their desktop, feel completely overwhelmed, and never take action. You don&apos;t need more chaotic files — you need a clear system.
           </p>
         </div>
 

@@ -14,7 +14,6 @@ export const metadata: Metadata = {
     'sell digital products',
     'digital product business',
     'AI agents',
-    'ready to post reels',
     'digital product courses',
     'Canva templates commercial use',
     'digital planners',

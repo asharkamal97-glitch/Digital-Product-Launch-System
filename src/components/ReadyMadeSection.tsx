@@ -94,7 +94,7 @@ export default function ReadyMadeSection() {
               <ul className="space-y-1.5 text-slate-700 dark:text-slate-300">
                 <li>✓ Customize and sell derivative digital products to end customers.</li>
                 <li>✓ Rebrand Canva templates, worksheets, and digital guides.</li>
-                <li>✓ Use reels, hooks, and captions to build organic social followings.</li>
+                <li>✓ Use content frameworks, hooks, and captions to build organic social followings.</li>
                 <li>✓ Keep 100% of the profits from your individual product sales.</li>
               </ul>
             </div>
@@ -106,7 +106,7 @@ export default function ReadyMadeSection() {
               <ul className="space-y-1.5 text-slate-700 dark:text-slate-300">
                 <li>✗ Reselling the master Google Drive link or raw backend access.</li>
                 <li>✗ Selling this complete launch system wholesale as a competing bundle.</li>
-                <li>✗ Redistributing raw video course masterclasses without modification.</li>
+                <li>✗ Redistributing raw master files or training courses without modification.</li>
               </ul>
             </div>
           </div>

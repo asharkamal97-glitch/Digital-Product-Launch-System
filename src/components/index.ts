@@ -3,6 +3,7 @@ export { default as GlassCard } from './GlassCard';
 export { default as Navbar } from './Navbar';
 export { default as Footer } from './Footer';
 export { default as LegalModal } from './LegalModal';
+export { default as ThemeToggle } from './ThemeToggle';
 
 export { default as HeroSection } from './HeroSection';
 export { default as ProblemSection } from './ProblemSection';
@@ -11,7 +12,6 @@ export { default as SystemIntroSection } from './SystemIntroSection';
 export { default as ProductLibrarySection } from './ProductLibrarySection';
 export { default as ShowcaseSection } from './ShowcaseSection';
 export { default as ReadyMadeSection } from './ReadyMadeSection';
-export { default as ContentLibrarySection } from './ContentLibrarySection';
 export { default as AiResourcesSection } from './AiResourcesSection';
 export { default as TrafficSystemSection } from './TrafficSystemSection';
 export { default as SellingStrategySection } from './SellingStrategySection';

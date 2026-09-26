@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { siteConfig } from '@/config/siteConfig';
-import { ArrowRight, Sparkles, FolderLock, ShieldCheck, CheckCircle2, Layers, Bot, Film, BookOpen, GraduationCap } from 'lucide-react';
+import { ArrowRight, Sparkles, FolderLock, ShieldCheck, CheckCircle2, Layers, Bot, BookOpen, GraduationCap } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -34,7 +34,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 font-normal max-w-2xl mx-auto leading-relaxed">
-            Learn how digital products work — then use ready-made resources, content, AI tools and traffic strategies to start building your own digital-product business.
+            Learn how digital products work — then use ready-made resources, templates, AI tools and traffic strategies to start building your own digital-product business.
           </p>
 
           {/* Action CTAs */}
@@ -97,9 +97,9 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* Window Body: 5 Interactive Pillars */}
+              {/* Window Body: 4 Interactive Pillars */}
               <div className="p-4 sm:p-6 md:p-8 space-y-6">
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                   <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-dark-850/90 border border-slate-200 dark:border-white/5 hover:border-indigo-300 dark:hover:border-indigo-500/30 transition-all group">
                     <div className="h-8 w-8 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-600 dark:text-indigo-400 mb-2">
                       <Bot className="w-4 h-4" />
@@ -113,18 +113,10 @@ export default function HeroSection() {
                       <GraduationCap className="w-4 h-4" />
                     </div>
                     <div className="text-base font-bold text-slate-900 dark:text-white font-mono">{siteConfig.productCounts.coursesAndMasterclasses}</div>
-                    <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Video Courses</div>
+                    <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Skill Courses</div>
                   </div>
 
-                  <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-dark-850/90 border border-slate-200 dark:border-white/5 hover:border-cyan-300 dark:hover:border-cyan-500/30 transition-all group">
-                    <div className="h-8 w-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-600 dark:text-cyan-400 mb-2">
-                      <Film className="w-4 h-4" />
-                    </div>
-                    <div className="text-base font-bold text-slate-900 dark:text-white font-mono">{siteConfig.productCounts.readyToPostReels}</div>
-                    <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Ready Reels</div>
-                  </div>
-
-                  <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-dark-850/90 border border-slate-200 dark:border-white/5 hover:border-amber-300 dark:hover:border-amber-500/30 transition-all group">
+                  <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-dark-850/90 border border-amber-300 dark:border-amber-500/30 transition-all group">
                     <div className="h-8 w-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-600 dark:text-amber-400 mb-2">
                       <Layers className="w-4 h-4" />
                     </div>
@@ -132,7 +124,7 @@ export default function HeroSection() {
                     <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Ready Products</div>
                   </div>
 
-                  <div className="col-span-2 sm:col-span-1 p-3.5 rounded-xl bg-slate-50 dark:bg-dark-850/90 border border-slate-200 dark:border-white/5 hover:border-emerald-300 dark:hover:border-emerald-500/30 transition-all group">
+                  <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-dark-850/90 border border-slate-200 dark:border-white/5 hover:border-emerald-300 dark:hover:border-emerald-500/30 transition-all group">
                     <div className="h-8 w-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-600 dark:text-emerald-400 mb-2">
                       <BookOpen className="w-4 h-4" />
                     </div>
@@ -153,7 +145,7 @@ export default function HeroSection() {
                     href="#journey"
                     className="text-xs font-semibold text-blue-600 dark:text-indigo-300 hover:text-blue-800 dark:hover:text-white flex items-center gap-1 flex-shrink-0 transition-colors"
                   >
-                    <span>Explore the 7-Step Journey</span>
+                    <span>Explore the 7-Step Roadmap</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </a>
                 </div>

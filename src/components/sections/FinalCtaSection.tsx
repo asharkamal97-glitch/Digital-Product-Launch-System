@@ -56,7 +56,7 @@ export default function FinalCtaSection() {
             <FolderLock className="w-4 h-4" /> Direct Google Drive Link
           </span>
           <span className="flex items-center gap-1.5 text-purple-600 dark:text-indigo-400 font-medium">
-            <Zap className="w-4 h-4" /> 15K+ AI Agents & 10K+ Reels
+            <Zap className="w-4 h-4" /> 15K+ AI Agents & Automation Stack
           </span>
         </div>
       </div>

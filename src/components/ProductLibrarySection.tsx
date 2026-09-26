@@ -2,14 +2,13 @@
 
 import React from 'react';
 import { siteConfig } from '@/config/siteConfig';
-import { Bot, GraduationCap, Film, PackageCheck, BookOpen, Layers, CheckCircle2 } from 'lucide-react';
+import { Bot, GraduationCap, PackageCheck, BookOpen, Layers, CheckCircle2 } from 'lucide-react';
 import GlassCard from '@/components/GlassCard';
 
 export default function ProductLibrarySection() {
   const iconMap: Record<string, any> = {
     Bot: Bot,
     GraduationCap: GraduationCap,
-    Film: Film,
     PackageCheck: PackageCheck,
     BookOpen: BookOpen,
   };
@@ -31,16 +30,14 @@ export default function ProductLibrarySection() {
           </p>
         </div>
 
-        {/* 5 Core Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {siteConfig.productLibrary.map((item, idx) => {
+        {/* 4 Core Pillars Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {siteConfig.productLibrary.map((item) => {
             const IconComponent = iconMap[item.iconName] || Layers;
             return (
               <GlassCard
                 key={item.id}
-                className={`p-6 sm:p-7 space-y-5 flex flex-col justify-between ${
-                  idx === 0 ? 'lg:col-span-2' : ''
-                }`}
+                className="p-6 sm:p-7 space-y-5 flex flex-col justify-between"
                 glowColor="indigo"
               >
                 <div className="space-y-4">
